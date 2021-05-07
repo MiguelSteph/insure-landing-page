@@ -1,0 +1,152 @@
+#weAreDifferentSection {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 3em;
+}
+
+h2 {
+    font-family: 'DM Serif Display';
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1em;
+    letter-spacing: -0.04125em;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0.5em;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, min-content);
+    row-gap: 0.5em;
+    justify-items: center;
+}
+
+.card-header {
+    font-family: 'DM Serif Display';
+    font-size: 1.75em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.375em;
+    letter-spacing: -0.02375em;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.card-text {
+    font-family: Karla;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625em;
+    letter-spacing: 0;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+#findMoreSection {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 1em;
+    margin-top: 6em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    
+    background-image: url('../images/bg-pattern-how-we-work-mobile.svg'), 
+            linear-gradient(var(--dark_violet), var(--dark_violet));
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+#findMoreSection > h1 {
+    font-family: 'DM Serif Display';
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25em;
+    letter-spacing: 0.03125em;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+
+    main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #weAreDifferentSection {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 1.5em;
+        column-gap: 1.5em;
+    }
+
+    h2 {
+        text-align: left;
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .card {
+        justify-items: left;
+    }
+
+    .card-header {
+        text-align: left;
+    }
+
+    .card-text {
+        text-align: left;
+    }
+
+    #first-card {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #second-card {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #third-card {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    #findMoreSection {
+        display: grid;
+        grid-template-columns: 35% 40%;
+        grid-template-rows: 100%;
+        column-gap: 20%;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+        
+        background-image: url('../images/bg-pattern-how-we-work-desktop.svg'), 
+                linear-gradient(var(--dark_violet), var(--dark_violet));
+    }
+
+    #findMoreSection > h1 {
+        text-align: left;
+    }
+
+    #findMoreSection > button {
+        width: fit-content;
+        height: fit-content;
+        align-self: center;
+        justify-self: end;
+    }
+}
