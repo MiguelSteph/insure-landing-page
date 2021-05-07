@@ -2,7 +2,7 @@
 
 This is a solution to the [Insure landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8). 
 
-Solution live site url: 
+Solution live site url: https://miguelsteph.github.io/insure-landing-page/
 
 ## Table of contents
 
@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Insure Landing Page Repo](https://github.com/MiguelSteph/insure-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Insure Landing Page](https://miguelsteph.github.io/insure-landing-page/)
 
 ## My process
 
